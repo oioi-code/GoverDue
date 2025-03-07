@@ -82,7 +82,7 @@ contract GoverDueVoting {
 
         if (votes[_voteId].voteType == VoteType.Election) {
             require(_candidateIndex < candidates[_voteId].length, "Invalid candidate index");
-            candidates[_voteId][_candidateIndex].voteCount++;
+            candidates[_voteId][_candidateIndex].voteCount++; //voteCount also changes accordingly
         }
 
         emit VoteCast(_voteId, msg.sender, _candidateIndex);
