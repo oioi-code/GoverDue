@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-/// @title GoverDueFunds - Government Financial Management
+/// GoverDueFunds - Government Financial Management
 /// @notice This contract extends GoverDue by introducing budget allocation, expenditure tracking, and fund transfers.
 contract GoverDueFunds {
     address public admin;  // Contract administrator
