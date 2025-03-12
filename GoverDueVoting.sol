@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-/// GoverDueVoting - Decentralized Voting System
-/// @notice This contract enables citizens to participate in elections, referendums, and governance decisions.
+/// This contract enables citizens to participate in elections, referendums, and governance decisions.
 contract GoverDueVoting {
     address public admin;  // Contract administrator
 
