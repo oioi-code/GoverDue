@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-/// @title GoverDue - Government Management Contract
+/// Government Management Contract
 /// @notice This contract manages government agencies, policy proposals, and citizen voting.
 contract GoverDue {
     address public admin;
