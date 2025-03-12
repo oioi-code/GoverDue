@@ -8,8 +8,7 @@ import "./GoverDuePetition.sol";
 import "./GoverDueContracts.sol";
 import "./GoverDueVoting.sol";
 
-/// @title GoverDueDeployer - Deployment Contract for the GoverDue Ecosystem
-/// @notice This contract deploys all GoverDue-related smart contracts and stores their addresses.
+/// This contract deploys all GoverDue-related smart contracts and stores their addresses.
 contract GoverDueDeployer {
     address public admin;
 
