@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-/// GoverDueContracts - Government Contract Management System
-/// @notice This contract enables government agencies to create contracts, assign contractors, track progress, and release payments.
+/// This contract enables government agencies to create contracts, assign contractors, track progress, and release payments.
 contract GoverDueContracts {
     address public admin;  // Contract administrator
 
