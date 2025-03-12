@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-/// GoverDueIdentity - Decentralized Identity Management
-/// @notice This contract provides identity verification for government agencies and registered citizens.
+/// This contract provides identity verification for government agencies and registered citizens.
 contract GoverDueIdentity {
     address public admin;  // Contract administrator
 
