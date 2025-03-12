@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-/// @title GoverDuePetition - Decentralized Petition System
-/// @notice This contract allows citizens to create petitions, gather support, and escalate issues to the government.
+/// This contract allows citizens to create petitions, gather support, and escalate issues to the government.
 contract GoverDuePetition {
     address public admin;  // Contract administrator
 
