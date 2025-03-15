@@ -87,7 +87,7 @@ contract GoverDueVoting {
         emit VoteCast(_voteId, msg.sender, _candidateIndex);
     }
 
-    /// @notice Conclude a vote
+    /// Conclude a vote
     function concludeVote(bytes32 _voteId) public onlyAdmin {
         require(votes[_voteId].exists, "Vote does not exist");
         require(block.timestamp >= votes[_voteId].deadline, "Voting period is not over yet");
@@ -97,7 +97,7 @@ contract GoverDueVoting {
         emit VoteConcluded(_voteId);
     }
 
-    /// @notice Get vote details
+    /// Get vote details
     function getVote(bytes32 _voteId) public view returns (
         string memory title,
         string memory description,
