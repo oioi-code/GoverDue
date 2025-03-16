@@ -44,7 +44,7 @@ contract GoverDueVoting {
         admin = msg.sender;
     }
 
-    /// @notice Create a new vote (election, referendum, or policy vote)
+    /// Create a new vote (election, referendum, or policy vote)
     function createVote(string memory _title, string memory _description, VoteType _voteType, uint256 _duration) public onlyAdmin {
         bytes32 voteId = keccak256(abi.encodePacked(_title, block.timestamp));
         require(!votes[voteId].exists, "Vote already exists");
