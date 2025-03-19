@@ -61,7 +61,7 @@ contract GoverDueVoting {
         emit VoteCreated(voteId, _title, _voteType, votes[voteId].deadline);
     }
 
-    /// @notice Add a candidate to an election
+    /// Add a candidate to an election
     function addCandidate(bytes32 _voteId, string memory _name) public onlyAdmin {
         require(votes[_voteId].exists, "Vote does not exist");
         require(votes[_voteId].voteType == VoteType.Election, "Only elections can have candidates");
@@ -72,7 +72,7 @@ contract GoverDueVoting {
         }));
     }
 
-    /// @notice Cast a vote
+    /// Cast a vote
     function castVote(bytes32 _voteId, uint256 _candidateIndex) public onlyBeforeDeadline(_voteId) {
         require(votes[_voteId].exists, "Vote does not exist");
         require(!hasVoted[_voteId][msg.sender], "You have already voted");
