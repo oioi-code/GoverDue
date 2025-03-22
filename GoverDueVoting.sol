@@ -112,7 +112,7 @@ contract GoverDueVoting {
         return (vote.title, vote.description, vote.voteType, vote.status, vote.deadline, vote.exists);
     }
 
-    /// @notice Get candidate details for an election
+    /// Get candidate details for an election
     function getCandidates(bytes32 _voteId) public view returns (Candidate[] memory) {
         require(votes[_voteId].exists, "Vote does not exist");
         require(votes[_voteId].voteType == VoteType.Election, "Only elections have candidates");
