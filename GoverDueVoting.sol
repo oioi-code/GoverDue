@@ -119,4 +119,15 @@ contract GoverDueVoting {
 
         return candidates[_voteId];
     }
+
+    /// Get total votes in an election
+    function getTotalVotes(bytes32 _voteId) public view returns (uint256 totalVotes) {
+        require(votes[_voteId].exists, "Vote does not exist");
+        require(votes[_voteId].voteType == VoteType.Election, "Only elections have candidates");
+
+        Candidate[] memory electionCandidates = candidates[_voteId];
+        for (uint256 i = 0; i < electionCandidates.length; i++) {
+            totalVotes += electionCandidates[i].voteCount;
+        }
+    }
 }
