@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.28;
 
 /// This contract allows citizens to create petitions, gather support, and escalate issues to the government.
 contract GoverDuePetition {
