@@ -29,6 +29,7 @@ npm install -g hardhat
 ```
 
 📜 Smart Contract Functions
+
 🔹 GoverDue.sol - Government Management
 
     addAgency(name, description, head) → Add a new government agency
