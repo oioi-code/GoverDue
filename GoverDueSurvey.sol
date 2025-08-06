@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.28;
 
 /// This contract enables citizens to create and participate in surveys.
 contract GoverDueSurvey {
