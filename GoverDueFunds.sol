@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.28;
 
 /// This contract extends GoverDue by introducing budget allocation, expenditure tracking, and fund transfers.
 contract GoverDueFunds {
