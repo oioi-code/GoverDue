@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.28;
 
 /// This contract enables government agencies to create contracts, assign contractors, track progress, and release payments.
 contract GoverDueContracts {
